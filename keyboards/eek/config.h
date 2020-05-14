@@ -41,8 +41,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
+// Define FLIPPED as 1 if you want the bat silk on top instead of the bottom.
+//#define FLIPPED 1
+
 #define MATRIX_ROW_PINS { E6, B4, B5, B6 }
-#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, B1, F7, F6, F5, F4 }
+#if FLIPPED == 1
+   //#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, B1, F7, F6, F5, F4 }
+   #define MATRIX_COL_PINS { F4, F5, F6, F7, B1, D7, C6, D4, D0, D1 }
+#else
+   //#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, D7, C6, D4, D0, D1 }
+   #define MATRIX_COL_PINS { D1, D0, D4, C6, D7, B1, F7, F6, F5, F4 }
+#endif
+
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
