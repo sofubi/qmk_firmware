@@ -45,23 +45,23 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_reviung39(
-    LGUI_T(KC_TAB),          KC_Q,         KC_W,             KC_E,            KC_R,  KC_T,            KC_Y,  KC_U,  KC_I,           KC_O,           KC_P,             KC_BSPC,
-    LCTL_T(KC_ESC),  KC_A,         KC_S,             KC_D,            KC_F,  KC_G,            KC_H,  KC_J,  KC_K,           KC_L,           TD(TD_SCLN_COL),  LALT_T(KC_QUOT),
-    LSFT_T(KC_ENT),         KC_Z, KC_X,    KC_C,    KC_V,  KC_B,            KC_N,  KC_M,  TD(TD_COMM_LT),  TD(TD_DOT_GT),  TD(TD_SLSH_QUES), RSFT_T(KC_ENT),
-                                                     LOWER,  KC_SPC,  RAISE
+    KC_TAB,          KC_Q,  KC_W,  KC_E,  KC_R,  KC_T,            KC_Y,  KC_U,  KC_I,     KC_O,    KC_P,             KC_BSPC,
+    LCTL_T(KC_ESC),  KC_A,  KC_S,  KC_D,  KC_F,  KC_G,            KC_H,  KC_J,  KC_K,     KC_L,    TD(TD_SCLN_COL),  TD(TD_SQUO_DQUO),
+    LSFT_T(KC_DOT),  KC_Z,  KC_X,  KC_C,  KC_V,  KC_B,            KC_N,  KC_M,  KC_COMM,  KC_DOT,  TD(TD_SLSH_QUES), RSFT_T(KC_ENT),
+                                                 LOWER,  KC_SPC,  RAISE
   ),
 
   [_LOWER] = LAYOUT_reviung39(
-    _______,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,    KC_PERC,            KC_CIRC,    KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  KC_DEL,
-    _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,   KC_BSLS,            KC_LEFT,    KC_DOWN,  KC_UP,    KC_RGHT,  KC_GRV,   KC_TILD,
-    _______,  KC_LCTL,  KC_LGUI,  KC_LALT,  KC_NO,     KC_GRV,             LCA(KC_T), KC_NO,    KC_NO,    KC_NO,    KC_PSCR,  RSFT_T(KC_DOT),
-                                                       _______,  KC_TILD,  _______
+    _______,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,    KC_PERC,            KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  KC_DEL,
+    _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,   KC_BSLS,            KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_GRV,   KC_TILD,
+    _______,  KC_LCTL,  KC_LGUI,  KC_LALT,  KC_NO,     KC_GRV,             KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_PSCR,  RSFT_T(KC_DOT),
+                                                       _______,  KC_TILD,   _______
   ),
 
   [_RAISE] = LAYOUT_reviung39(
-    _______,  KC_1,     KC_2,     KC_3,     KC_4,      KC_5,               KC_6,       KC_7,     KC_8,     KC_9,     KC_0,     KC_DEL,
-    _______,  KC_UNDS,  KC_PLUS,  KC_LCBR,  KC_RCBR,   KC_PIPE,            KC_NO,      KC_4,     KC_5,     KC_6,     KC_NO,    KC_NO,
-    _______,  KC_LCTL,  KC_RGUI,  KC_RALT,  KC_LPRN,   KC_RPRN,            LCA(KC_T), KC_1,     KC_2,     KC_3,     KC_NO,    KC_F12,
+    _______,  KC_1,     KC_2,     KC_3,     KC_4,      KC_5,               KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_DEL,
+    _______,  KC_UNDS,  KC_PLUS,  KC_LCBR,  KC_RCBR,   KC_PIPE,            KC_NO,    KC_4,     KC_5,     KC_6,     KC_NO,    KC_NO,
+    _______,  KC_LCTL,  KC_RGUI,  KC_RALT,  KC_LPRN,   KC_RPRN,            KC_NO,    KC_1,     KC_2,     KC_3,     KC_NO,    KC_F12,
                                                        _______,  KC_TILD,  _______
 
   ),
