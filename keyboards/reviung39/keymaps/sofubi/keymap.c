@@ -54,14 +54,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT_reviung39(
     _______,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,    KC_PERC,            KC_CIRC,    KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  KC_DEL,
     _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,   KC_BSLS,            KC_LEFT,    KC_DOWN,  KC_UP,    KC_RGHT,  KC_GRV,   KC_TILD,
-    _______,  KC_LCTL,  KC_LGUI,  KC_LALT,  KC_NO,     KC_GRV,             LCA_(KC_T), KC_NO,    KC_NO,    KC_NO,    KC_PSCR,  RSFT_T(KC_DOT),
+    _______,  KC_LCTL,  KC_LGUI,  KC_LALT,  KC_NO,     KC_GRV,             LCA(KC_T), KC_NO,    KC_NO,    KC_NO,    KC_PSCR,  RSFT_T(KC_DOT),
                                                        _______,  KC_TILD,  _______
   ),
 
   [_RAISE] = LAYOUT_reviung39(
     _______,  KC_1,     KC_2,     KC_3,     KC_4,      KC_5,               KC_6,       KC_7,     KC_8,     KC_9,     KC_0,     KC_DEL,
     _______,  KC_UNDS,  KC_PLUS,  KC_LCBR,  KC_RCBR,   KC_PIPE,            KC_NO,      KC_4,     KC_5,     KC_6,     KC_NO,    KC_NO,
-    _______,  KC_LCTL,  KC_RGUI,  KC_RALT,  KC_LPRN,   KC_RPRN,            LCA_(KC_T), KC_1,     KC_2,     KC_3,     KC_NO,    KC_F12,
+    _______,  KC_LCTL,  KC_RGUI,  KC_RALT,  KC_LPRN,   KC_RPRN,            LCA(KC_T), KC_1,     KC_2,     KC_3,     KC_NO,    KC_F12,
                                                        _______,  KC_TILD,  _______
 
   ),
