@@ -31,33 +31,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 10
 
-/*
- * Keyboard Matrix Assignments
- *
- * Change this to how you wired your keyboard
- * COLS: AVR pins used for columns, left to right
- * ROWS: AVR pins used for rows, top to bottom
- * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
- *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
- *
-*/
+#define DIODE_DIRECTION COL2ROW
 
 #define MATRIX_ROW_PINS { E6, B4, B5, B6 }
 #if FLIPPED
-   #define MATRIX_COL_PINS { F4, F5, F6, F7, B1, D7, C6, D4, D0, D1 }
+   //#define MATRIX_COL_PINS { F4, F5, F6, F7, B1, D7, C6, D4, D0, D1 }
+   // above is v1.2, below is v1.3
+   #define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2, B6, C6, D4 }
 #else
-   #define MATRIX_COL_PINS { D1, D0, D4, C6, D7, B1, F7, F6, F5, F4 }
+   //#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, B1, F7, F6, F5, F4 }
+   // above is v1.2, below is v1.3
+   #define MATRIX_COL_PINS { D4, C6, B6, B2, B3, B1, F7, F6, F5, F4 }
 #endif
 
 #define UNUSED_PINS
 
-/* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
-
-/*
- * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
- */
-//#define SOFT_SERIAL_PIN D0 // or D1, D2, D3, E6
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
@@ -69,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_HUE_STEP 4
   #define RGBLIGHT_SAT_STEP 8
   #define RGBLIGHT_VAL_STEP 8
-  #define RGBLIGHT_LIMIT_VAL 150 /* The maximum brightness level */
+  #define RGBLIGHT_LIMIT_VAL 200 /* The maximum brightness level */
   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 /*== all animations enable ==*/
 //  #define RGBLIGHT_ANIMATIONS
