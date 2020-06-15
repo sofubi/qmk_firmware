@@ -42,7 +42,6 @@
   //       35 34 33 32 31 30           3
 
 
-
 led_config_t g_led_config = { {
     {    4,   3,   2,   1,   0,  0,   1,  2,  3,  4  },
     {    5,   6,   7,   8,   9,  9,   8,  7,  6,  5  },
@@ -94,13 +93,13 @@ led_config_t g_led_config = { {
 #endif
 
 
-void matrix_init_kb(void) {
+/* void matrix_init_kb(void) {
   // put your keyboard start-up code here
   // runs once when the firmware starts up
 
   matrix_init_user();
 }
-/*
+
 void matrix_scan_kb(void) {
   // put your looping keyboard code here
   // runs every cycle (a lot)
