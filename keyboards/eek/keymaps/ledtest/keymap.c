@@ -38,19 +38,6 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-/* Qwerty
- *
- * ,----------------------------------.           ,----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |           |   Y  |   U  |   I  |   O  |   P  |
- * |------+------+------+------+------|           |------+------+------+------+------|
- * |   A  |   S  |   D  |   F  |   G  |           |   H  |   J  |   K  |   L  |   ;  |
- * |------+------+------+------+------|           |------+------+------+------+------|
- * |   Z  |   X  |   C  |   V  |   B  |           |   N  |   M  |   ,  |   .  |   /  |
- * `-------------+------+------+------|           |------+------+------+-------------'
- *               | Ctrl | LOWER| Space|           |BckSpc| RAISE| Shift|
- *               `--------------------'           `--------------------'
- *
- */
   [_QUERTY] = LAYOUT(
     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,         RGBRST,     RGB_HUI,    RGB_SAI,    RGB_VAI,    RGB_SPI,    \
     KC_A,    KC_S,    KC_D,    KC_F,    KC_G,         RGB_MOD,    RGB_HUD,    RGB_SAD,    RGB_VAD,    RGB_SPD, \

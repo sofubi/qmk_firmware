@@ -17,5 +17,6 @@ AUDIO_ENABLE = no           # Audio output on port C6
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 HD44780_ENABLE = no 		# Enable support for HD44780 based LCDs
 
-RGB_MATRIX_ENABLE = WS2812
+# RGB_MATRIX_ENABLE = WS2812
 # OPT_DEFS += -DFLIPPED      # Enable if board is flipped to have eek! silk on top
+LINK_TIME_OPTIMIZATION_ENABLE = yes

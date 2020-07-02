@@ -1,3 +1,2 @@
-# The default keymap for REVIUNG39
-
-__REVIUNG39 is regular version__  
+# The default keymap for eek!
+# It's borrowed from the minidox.
