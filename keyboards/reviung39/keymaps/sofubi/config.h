@@ -28,6 +28,3 @@
   #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 #endif
-
-// /*== tap dance settings *==/
-#define TAPPING_TERM 175

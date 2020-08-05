@@ -11,7 +11,8 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #endif
 
 // clang-format off
-#define LAYOUT_wrapper(...)          LAYOUT(__VA_ARGS__)
+#define LAYOUT_wrapper(...)             LAYOUT(__VA_ARGS__)
+#define LAYOUT_reviung39_wrapper(...)   LAYOUT_reviung39(__VA_ARGS__)
 
 #define _________________QWERTY_L1_________________        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T
 #define _________________QWERTY_L2_________________        KC_A,    KC_S,    KC_D,    KC_F,    KC_G

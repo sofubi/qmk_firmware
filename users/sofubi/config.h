@@ -1,8 +1,9 @@
 #pragma once
 
 // Tapping term settings
-#define TAPPING_TERM 100
+#define TAPPING_TERM 175
 #define TAPPING_FORCE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
 
 #ifdef OLED_DRIVER_ENABLE
    #define OLED_TIMEOUT 300000

@@ -22,6 +22,10 @@ BOOTLOADER = qmk-dfu
 OLED_DRIVER_ENABLE = yes
 endif
 
+ifeq ($(strip $(KEYBOARD)), reviung39)
+RGBLIGHT_ENABLE = yes
+endif
+
 ifeq ($(strip $(OLED_DRIVER_ENABLE)), yes)
 WPM_ENABLE = yes
     SRC += oled.c
