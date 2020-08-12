@@ -7,6 +7,10 @@
 #if defined(OLED_DRIVER_ENABLE)
 #    include "oled.h"
 #endif
+#if defined(TAP_DANCE_ENABLE)
+#    include "tapdance.h"
+#endif
+
 
 enum layers {
     _QWERTY = 0,

@@ -26,9 +26,17 @@ ifeq ($(strip $(KEYBOARD)), reviung39)
 RGBLIGHT_ENABLE = yes
 endif
 
+ifeq ($(strip $(KEYBOARD)), reviung34)
+TAP_DANCE_ENABLE = yes
+endif
+
 ifeq ($(strip $(OLED_DRIVER_ENABLE)), yes)
 WPM_ENABLE = yes
     SRC += oled.c
+endif
+
+ifeq ($(strip $(TAP_DANCE_ENABLE)), yes)
+  SRC += tapdance.c
 endif
 
 ifdef CONSOLE_ENABLE
