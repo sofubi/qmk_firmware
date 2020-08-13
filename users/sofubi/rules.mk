@@ -30,6 +30,10 @@ ifeq ($(strip $(KEYBOARD)), reviung34)
 TAP_DANCE_ENABLE = yes
 endif
 
+ifeq ($(strip $(KEYBOARD)), handwired/ferris)
+MOUSEKEY_ENABLE = yes
+endif
+
 ifeq ($(strip $(OLED_DRIVER_ENABLE)), yes)
 WPM_ENABLE = yes
     SRC += oled.c

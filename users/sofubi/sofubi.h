@@ -11,13 +11,18 @@
 #    include "tapdance.h"
 #endif
 
-
 enum layers {
     _QWERTY = 0,
-	_COLEMAK,
+	_MOUSE,
+	_NAV,
+    _RSYM,
+	_LSYM,
+	_FUNC,
+	_NUM,
+	_ALWAYS,
     _LOWER,
     _RAISE,
-    _ADJUST,
+    _ADJUST
 };
 
 void          matrix_init_keymap(void);
