@@ -28,6 +28,7 @@ endif
 
 ifeq ($(strip $(KEYBOARD)), reviung34)
 TAP_DANCE_ENABLE = yes
+MOUSEKEY_ENABLE = yes
 endif
 
 ifeq ($(strip $(KEYBOARD)), handwired/ferris)
