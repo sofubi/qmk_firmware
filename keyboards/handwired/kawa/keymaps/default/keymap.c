@@ -17,7 +17,7 @@
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
-    _BASE = SAFE_RANGE,
+    _BASE = 0,
 	_ALWAYS,
 	_FUNC,
 	_NAV,
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALWAYS] = LAYOUT(
         XXXXXXX,   XXXXXXX,   KC_COLN,   KC_ESC,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   KC_DEL,
         XXXXXXX,   XXXXXXX,   XXXXXXX,   KC_ENT,   XXXXXXX,   XXXXXXX,   KC_LGUI,   XXXXXXX,   XXXXXXX,   XXXXXXX,
-		XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,  XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,
+		XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,  XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   RESET,
 										      KC_TAB,               KC_NO
     ),
     [_FUNC] = LAYOUT(
