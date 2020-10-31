@@ -13,9 +13,10 @@ SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
 CONSOLE_ENABLE = no
 NKRO_ENABLE = no
-LINK_TIME_OPTIMIZATION_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+LTO_ENABLE = yes
 
-ifeq ($(strip $(KEYBOARD)), crkbd/rev1)
+ifeq ($(strip $(KEYBOARD)), crkbd/rev1/legacy)
 RGB_MATRIX_ENABLE = WS2812
 EXTRAFLAGS += -flto
 BOOTLOADER = qmk-dfu
@@ -31,7 +32,7 @@ TAP_DANCE_ENABLE = yes
 MOUSEKEY_ENABLE = yes
 endif
 
-ifeq ($(strip $(KEYBOARD)), handwired/ferris)
+ifeq ($(strip $(KEYBOARD)), ferris/0_1)
 MOUSEKEY_ENABLE = yes
 endif
 

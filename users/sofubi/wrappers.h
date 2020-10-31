@@ -12,7 +12,7 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 
 // clang-format off
 #define LAYOUT_wrapper(...)             LAYOUT(__VA_ARGS__)
-#define LAYOUT_ferris_wrapper(...)      LAYOUT(__VA_ARGS__)
+#define LAYOUT_crkbd_wrapper(...)       LAYOUT_split_3x5_3(__VA_ARGS__)
 #define LAYOUT_reviung34_wrapper(...)   LAYOUT_reviung34(__VA_ARGS__)
 #define LAYOUT_reviung39_wrapper(...)   LAYOUT_reviung39(__VA_ARGS__)
 
@@ -65,11 +65,11 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 
 #define _________________34_L1_____________________       KC_Q, KC_W, KC_E, KC_R, KC_T
 #define _________________34_L2_____________________       LSFT_T(KC_A), LT(5, KC_S), LT(2, KC_D), LT(3, KC_F), KC_G
-#define _________________34_L3_____________________       KC_Z, LCTL_T(KC_X), LGUI_T(KC_C), KC_V, KC_B
+#define _________________34_L3_____________________       KC_Z, LCTL_T(KC_X), LGUI_T(KC_C), LALT_T(KC_V), KC_B
 
 #define _________________34_R1_____________________       KC_Y, KC_U, KC_I, KC_O, KC_P
 #define _________________34_R2_____________________       KC_H, LT(4, KC_J), LT(1, KC_K), LT(6, KC_L), LSFT_T(KC_SCLN)
-#define _________________34_R3_____________________       KC_N, KC_M, LGUI_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH
+#define _________________34_R3_____________________       KC_N, LALT_T(KC_M), LGUI_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH
  
 #define _________________34_MOUSE_L1_______________       _______, KC_BTN1, KC_WH_U, KC_BTN2, _______
 #define _________________34_MOUSE_L2_______________       KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______
@@ -80,7 +80,7 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #define _________________34_MOUSE_R3_______________       ___________________BLANK___________________
  
 #define _________________34_NAV_L1_________________       ___________________BLANK___________________
-#define _________________34_NAV_L2_________________       _______, KC_LALT, KC_NO, LCTL_T(KC_LGUI), _______
+#define _________________34_NAV_L2_________________       _______, _______, KC_NO, _______, _______
 #define _________________34_NAV_L3_________________       ___________________BLANK___________________
 
 #define _________________34_NAV_R1_________________       _______, _______, KC_PGUP, _______, _______
@@ -125,5 +125,13 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 
 #define _________________34_ALWAYS_R1______________       _______, _______, _______, _______, KC_DEL
 #define _________________34_ALWAYS_R2______________       _______, KC_LGUI, _______, _______, _______
-#define _________________34_ALWAYS_R3______________       _______, _______, RALT_T(KC_LT), RCTL_T(KC_GT), RESET
+#define _________________34_ALWAYS_R3______________       _______, _______, _______, _______, RESET
+
+#define ___________________34_RGB_L1_______________       ___________________BLANK___________________
+#define ___________________34_RGB_L2_______________       RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI
+#define ___________________34_RGB_L3_______________       RGB_TOG, RGB_HUD, RGB_SAD, RGB_VAD, RGB_SPD
+
+#define ___________________34_RGB_R1_______________       _______, KC_MSTP, _______, KC_MPLY, _______
+#define ___________________34_RGB_R2_______________       _______, KC_VOLD, _______, KC_VOLU, _______
+#define ___________________34_RGB_R3_______________       _______, KC_MPRV, _______, KC_MNXT, _______
 // clang-format on

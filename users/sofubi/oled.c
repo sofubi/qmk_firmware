@@ -360,8 +360,6 @@ void render_default_layer_state(void) {
 		case _QWERTY:
 			oled_write_P(PSTR(OLED_RENDER_LAYOUT_QWERTY), false);
 			break;
-		case _COLEMAK:
-			oled_write_P(PSTR(OLED_RENDER_LAYOUT_COLEMAK), false);
 	}
 #ifdef OLED_DISPLAY_128X64
     oled_advance_page(true);

@@ -1,9 +1,9 @@
 #pragma once
 
 #include QMK_KEYBOARD_H
-#include "eeprom.h"
 #include "process_records.h"
 #include "wrappers.h"
+
 #if defined(OLED_DRIVER_ENABLE)
 #    include "oled.h"
 #endif
@@ -20,6 +20,7 @@ enum layers {
 	_FUNC,
 	_NUM,
 	_ALWAYS,
+	_RGB,
     _LOWER,
     _RAISE,
     _ADJUST
