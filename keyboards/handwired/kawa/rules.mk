@@ -4,6 +4,8 @@ MCU = atmega32u4
 # Bootloader selection
 BOOTLOADER = caterina
 
+OLED_DRIVER_ENABLE = yes   # Enables the use of OLED displays
+
 # Build Options
 #   change yes to no to disable
 #

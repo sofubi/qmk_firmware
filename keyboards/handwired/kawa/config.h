@@ -26,6 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER sofubi
 #define PRODUCT      kawa
 
+#define OLED_DISPLAY_128x64
+
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 10
