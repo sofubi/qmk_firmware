@@ -2,11 +2,10 @@
 
 ![kawa](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+*A 32 key "fixed split" keyboard heavily inspired by the Reviung39 and Reviung41*
 
-* Keyboard Maintainer: [sofubi](https://github.com/yourusername)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [sofubi](https://github.com/sofubi)
+* Hardware Supported: Arduino Pro Micro
 
 Make example for this keyboard (after setting up your build environment):
 
