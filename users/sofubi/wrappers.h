@@ -25,12 +25,12 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #define _________________QWERTY_R3_________________       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH
 
 #define _________________COLEMAK_L1________________       KC_Q,    KC_W,    KC_F,    KC_P,    KC_G
-#define _________________COLEMAK_L2________________       KC_A,    KC_R,    KC_S,    KC_T,    KC_D
-#define _________________COLEMAK_L3________________       KC_Z,    KC_X,    KC_C,    KC_V,    KC_B
+#define _________________COLEMAK_L2________________       LSFT_T(KC_A), LT(_FUNC, KC_R), LT(_NAV, KC_S), LT(_RSYM, KC_T), KC_D
+#define _________________COLEMAK_L3________________       KC_Z, LCTL_T(KC_X), LGUI_T(KC_C), LALT_T(KC_V), KC_B
 
-#define _________________COLEMAK_R1________________       KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN
-#define _________________COLEMAK_R2________________       KC_H,    KC_N,    KC_E,    KC_I,    KC_O
-#define _________________COLEMAK_R3________________       KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH
+#define _________________COLEMAK_R1________________       KC_J, KC_L,    KC_U,    KC_Y,    KC_SCLN
+#define _________________COLEMAK_R2________________       KC_H, LT(_LSYM, KC_N), LT(_MOUSE, KC_E), LT(_NUM, KC_I), LSFT_T(KC_O)
+#define _________________COLEMAK_R3________________       KC_K, LALT_T(KC_M), LGUI_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH
 
 #define ________________NUMBER_LEFT________________       KC_1,    KC_2,    KC_3,    KC_4,    KC_5
 #define ________________NUMBER_RIGHT_______________       KC_6,    KC_7,    KC_8,    KC_9,    KC_0
@@ -64,11 +64,11 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #define _________________ADJUST_R3_________________       _____________________NO____________________
 
 #define _________________34_L1_____________________       KC_Q, KC_W, KC_E, KC_R, KC_T
-#define _________________34_L2_____________________       LSFT_T(KC_A), LT(5, KC_S), LT(2, KC_D), LT(3, KC_F), KC_G
+#define _________________34_L2_____________________       LSFT_T(KC_A), LT(_FUNC, KC_S), LT(_NAV, KC_D), LT(_RSYM, KC_F), KC_G
 #define _________________34_L3_____________________       KC_Z, LCTL_T(KC_X), LGUI_T(KC_C), LALT_T(KC_V), KC_B
 
 #define _________________34_R1_____________________       KC_Y, KC_U, KC_I, KC_O, KC_P
-#define _________________34_R2_____________________       KC_H, LT(4, KC_J), LT(1, KC_K), LT(6, KC_L), LSFT_T(KC_SCLN)
+#define _________________34_R2_____________________       KC_H, LT(_LSYM, KC_J), LT(_MOUSE, KC_K), LT(_NUM, KC_L), LSFT_T(KC_SCLN)
 #define _________________34_R3_____________________       KC_N, LALT_T(KC_M), LGUI_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH
  
 #define _________________34_MOUSE_L1_______________       _______, KC_BTN1, KC_WH_U, KC_BTN2, _______
@@ -121,7 +121,7 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 
 #define _________________34_ALWAYS_L1______________       _______, _______, KC_COLN, KC_ESC, _______
 #define _________________34_ALWAYS_L2______________       _______, KC_PERC, KC_SLSH, KC_ENT, _______
-#define _________________34_ALWAYS_L3______________       _______, _______, _______, KC_EXLM, _______
+#define _________________34_ALWAYS_L3______________       DF(_QWERTY), DF(_COLEMAK), _______, KC_EXLM, _______
 
 #define _________________34_ALWAYS_R1______________       _______, _______, _______, _______, KC_DEL
 #define _________________34_ALWAYS_R2______________       _______, KC_LGUI, _______, _______, _______

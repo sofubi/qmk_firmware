@@ -11,8 +11,9 @@
 #    include "tapdance.h"
 #endif
 
-enum layers {
+enum userspace_layers {
     _QWERTY = 0,
+	_COLEMAK,
 	_MOUSE,
 	_NAV,
     _RSYM,
