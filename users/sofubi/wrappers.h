@@ -72,7 +72,7 @@ expanded before being used as arguments to the LAYOUT_xxx macro.
 #define _________________34_R3_____________________       KC_N, LALT_T(KC_M), LGUI_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH
  
 #define _________________34_MOUSE_L1_______________       _______, KC_BTN1, KC_WH_U, KC_BTN2, _______
-#define _________________34_MOUSE_L2_______________       KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, _______
+#define _________________34_MOUSE_L2_______________       KC_MS_L, KC_MS_U, KC_MS_D, KC_MS_R, _______
 #define _________________34_MOUSE_L3_______________       _______, KC_WH_L, KC_WH_D, KC_WH_R, _______
 
 #define _________________34_MOUSE_R1_______________       ___________________BLANK___________________

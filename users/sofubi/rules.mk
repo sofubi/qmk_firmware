@@ -36,6 +36,12 @@ ifeq ($(strip $(KEYBOARD)), ferris/0_1)
 MOUSEKEY_ENABLE = yes
 endif
 
+ifeq ($(strip $(KEYBOARD)), eek)
+BOOTLOADER = caterina
+MOUSEKEY_ENABLE = yes
+OPT_DEFS += -DFLIPPED
+endif
+
 ifeq ($(strip $(OLED_DRIVER_ENABLE)), yes)
 WPM_ENABLE = yes
     SRC += oled.c
